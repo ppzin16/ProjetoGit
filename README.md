@@ -1,0 +1,1 @@
+Quem leu quer me dar
