@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seleção de produtos</title>
+    <title>Seleï¿½ï¿½o de produtos</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -102,7 +102,7 @@
             cursor: not-allowed;
         }
 
-        /* Adicionado estilo para o histórico de compras */
+        /* Adicionado estilo para o histï¿½rico de compras */
         .historico-compras {
             margin: 20px auto;
             text-align: center;
@@ -137,7 +137,7 @@
             <p>Pepsi</p>
             <div class="quantidade">
                 <label>Quantidade:</label>
-                <input type="number" id="quantidadePepsi" value="1">
+                <input type="number" id="quantidadePepsii" value="1">
             </div>
         </div>
     </div>
@@ -183,7 +183,7 @@
     <div class="nota-fiscal">
         <h3>Nota Fiscal:</h3>
         <ul id="notaFiscal">
-            <!-- Os produtos selecionados serão exibidos aqui -->
+            <!-- Os produtos selecionados serï¿½o exibidos aqui -->
         </ul>
         <p><strong>Total: R$ <span id="total">0,00</span></strong></p>
         <p><strong id="mensagemCompra" style="display: none;">Compra Finalizada!</strong></p>
@@ -194,11 +194,11 @@
         </div>
     </div>
 
-    <!-- Histórico de Compras -->
+    <!-- Histï¿½rico de Compras -->
     <div class="historico-compras">
-        <h3>Histórico de Compras</h3>
+        <h3>Histï¿½rico de Compras</h3>
         <ul id="historicoCompras">
-            <!-- Compras anteriores serão exibidas aqui -->
+            <!-- Compras anteriores serï¿½o exibidas aqui -->
         </ul>
     </div>
 
@@ -221,7 +221,7 @@
                 document.getElementById('total').innerText = 'R$ ' + totalCompra.toFixed(2).replace('.', ',');
                 document.getElementById('btnFinalizarCompra').removeAttribute('disabled');
             } else {
-                alert('Quantidade inválida. Por favor, insira um número válido.');
+                alert('Quantidade invï¿½lida. Por favor, insira um nï¿½mero vï¿½lido.');
                 quantidadeInput.value = 1;
             }
         }
@@ -233,7 +233,7 @@
                 numCompras++;
                 document.getElementById('comprasRealizadas').innerText = numCompras;
 
-                // Adicione o detalhe da compra ao histórico
+                // Adicione o detalhe da compra ao histï¿½rico
                 const historicoComprasList = document.getElementById('historicoCompras');
                 const historicoItem = document.createElement('li');
                 historicoItem.textContent = `Compra #${numCompras}: Total R$${totalCompra.toFixed(2).replace('.', ',')}`;
